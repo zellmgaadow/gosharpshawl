@@ -1,0 +1,12 @@
+name: Run Tests
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-pipeline:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process data
+        run: echo "workspace ready"
